@@ -1,0 +1,38 @@
+.header {
+  margin-bottom: 30px;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__menu {
+    background-color: #333;
+    overflow: hidden;
+  }
+
+  &__menu-list {
+    display: flex;
+  }
+
+  &__menu-item {
+    list-style-type: none;
+  }
+
+  &__menu-link {
+    float: left;
+    color: var(--font-gold);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: var(--font-blue);
+      color: var(--font-black);
+    }
+
+    &.active {
+      background-color: var(--strong-pass-color);
+      color: var(--font-gold);
+    }
+  }
+}

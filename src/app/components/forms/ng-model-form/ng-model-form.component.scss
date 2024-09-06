@@ -1,0 +1,26 @@
+.password-strength-container {
+  width: 300px;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.strength-bars {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bar {
+  width: 30%;
+  height: 8px;
+  background-color: var(--base-pass-color);
+  ;
+  border-radius: 4px;
+}

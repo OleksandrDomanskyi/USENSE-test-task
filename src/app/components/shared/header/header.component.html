@@ -1,0 +1,27 @@
+<header class="header">
+  <H1 class="header__title title-lg">USENSE Test Task</H1>
+  <div class="header__menu">
+    <ul class="header__menu-list">
+      <li class="header__menu-item">
+        <a class="header__menu-link heading-md" [routerLink]="['/reactive']" routerLinkActive="active" >
+          First Method
+        </a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link heading-md" [routerLink]="['/model']" routerLinkActive="active">
+          Second Method
+        </a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link heading-md" [routerLink]="['/material']" routerLinkActive="active">
+          Third Method
+        </a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link heading-md" [routerLink]="['/']" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active">
+          Back to Home
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
