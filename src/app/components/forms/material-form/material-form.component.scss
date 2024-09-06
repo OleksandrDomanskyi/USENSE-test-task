@@ -1,0 +1,37 @@
+.password-form {
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  &__label {
+    text-align: center;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 2px solid var(--font-black);
+  }
+}
+
+.strength-bars {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bar {
+  width: 520px;
+  height: 20px;
+  background-color: var(--base-pass-color);
+  ;
+  border-radius: 4px;
+}

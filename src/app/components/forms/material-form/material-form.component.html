@@ -1,0 +1,20 @@
+<div class="password-form__container">
+  <form class="password-form" [formGroup]="passwordForm">
+    <mat-form-field appearance="fill">
+      <mat-label class="password-form__label heading-sm">Password</mat-label>
+      <input 
+        matInput
+        type="password" 
+        formControlName="password" 
+        placeholder="Enter your password"
+        class="password-form__input"
+      />
+    </mat-form-field>
+  </form>
+
+  <div class="strength-bars">
+    <div class="bar" [ngStyle]="{'background-color': getBarColor(0)}"></div>
+    <div class="bar" [ngStyle]="{'background-color': getBarColor(1)}"></div>
+    <div class="bar" [ngStyle]="{'background-color': getBarColor(2)}"></div>
+  </div>
+</div>
